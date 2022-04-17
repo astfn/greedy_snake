@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <mian id="app">
+      <div id="wrapper">
+        <div id="game_box">
+          <div id="snake">
+            <div class="header"></div>
+          </div>
+          <div id="food">
+            <div class="crumbs"></div>
+            <div class="crumbs"></div>
+            <div class="crumbs"></div>
+            <div class="crumbs"></div>
+          </div>
+        </div>
+        <div id="info_box">
+          <p>SCORE:<span class="score">0</span></p>
+          <p>LEVEL:<span class="level">1</span></p>
+        </div>
+      </div>
+
+      <div id="countroller">
+        <div id="switch">
+          <div class="start_btn"></div>
+          <div class="pause_btn"></div>
+        </div>
+
+        <div id="directions">
+          <div>
+            <div class="top_btn">↑</div>
+          </div>
+          <div>
+            <div class="left_btn">←</div>
+            <div class="down_btn">↓</div>
+            <div class="right_btn">→</div>
+          </div>
+        </div>
+      </div>
+    </mian>
+  </body>
+  <script type="module">
+    import * as API from "./index.js";
+  </script>
+</html>
